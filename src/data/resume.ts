@@ -7,6 +7,9 @@ export const resumeData = {
         phone: "+91 9447715481",
         github: "https://github.com/abhinavgkrishnan",
         linkedin: "https://www.linkedin.com/in/abhinav-krishnan-9a85b81a3",
+        farcaster: "https://farcaster.xyz/gkoding",
+        x: "https://x.com/_gkoding",
+        telegram: "https://t.me/gkoding",
         summary: "Architecting AI agents and full-stack solutions. Passionate about automation, blockchain, and building tools that empower developers.",
     },
     experience: [

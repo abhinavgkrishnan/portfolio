@@ -11,8 +11,8 @@ export default function Header() {
                 <nav className="hidden md:flex items-center gap-8 font-mono font-bold">
                     <Link href="#about" className="hover:underline decoration-4 decoration-primary underline-offset-4">ABOUT</Link>
                     <Link href="#experience" className="hover:underline decoration-4 decoration-secondary underline-offset-4">EXPERIENCE</Link>
-                    <Link href="#projects" className="hover:underline decoration-4 decoration-accent underline-offset-4">PROJECTS</Link>
-                    <Link href="#contact" className="hover:underline decoration-4 decoration-success underline-offset-4">CONTACT</Link>
+                    <Link href="#projects" className="hover:underline decoration-4 decoration-primary underline-offset-4">PROJECTS</Link>
+                    <Link href="#contact" className="hover:underline decoration-4 decoration-secondary underline-offset-4">CONTACT</Link>
                 </nav>
 
                 <a
