@@ -5,7 +5,7 @@ export default function Header() {
         <header className="w-full border-b-[3px] border-black bg-white sticky top-0 z-50">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="text-2xl font-bold font-display uppercase tracking-tighter hover:text-primary transition-colors">
-                    Meet-Cute
+                  GK
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 font-mono font-bold">
