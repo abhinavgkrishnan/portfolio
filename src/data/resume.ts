@@ -22,7 +22,7 @@ export const resumeData = {
                 "Architected a Python based AI agent orchestrator which can tap into an array of api tools and MCP servers simplifying automation.",
                 "Developed 25+ Specialized AI agents for diverse use cases.",
                 "Utilized DuckDB as an intermediate SQL layer for massive API responses allowing agents to query targeted data.",
-                "Worked on developing 'gen6', a visual workflow automation platform primarily architecting the backend.",
+                "Developed “Forge”, a visual workflow automation platform primarily architecting the backend and a specialized Meta-Agent for natural language workflow generation, while contributing to the visual interface design.",
                 "Managed full-stack deployment pipelines with Docker, Railway, Supabase and Vercel services."
             ]
         },
@@ -36,7 +36,8 @@ export const resumeData = {
                 "Collaborated with over 5 cross-functional teams to ensure accurate data transfer.",
                 "Developed and optimized 20+ SuiteScripts (JavaScript) to automate processes.",
                 "Created 100+ user stories and 30+ test scripts in Jira.",
-                "Built a custom SuiteBilling solution to address a critical business need."
+                "Built a custom SuiteBilling solution to address a critical business need.",
+                "Collaborated in the initiation of Netsuite AI automation efforts."
             ]
         }
     ],
