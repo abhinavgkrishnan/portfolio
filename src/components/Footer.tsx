@@ -1,14 +1,9 @@
-import { resumeData } from '@/data/resume';
-
 export default function Footer() {
     return (
-        <footer className="w-full py-8 bg-black text-white">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-                <div className="font-display font-bold text-xl mb-4 md:mb-0">
-                    GK_PORTFOLIO © {new Date().getFullYear()}
-                </div>
-                <div className="font-mono text-sm text-gray-400">
-                </div>
+        <footer className="foot">
+            <div className="foot-inner">
+                <span>ABHINAV G KRISHNAN © 2026</span>
+                <span className="right">Designed &amp; built in Bangalore, India</span>
             </div>
         </footer>
     );

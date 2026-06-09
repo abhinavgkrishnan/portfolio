@@ -1,58 +1,61 @@
 import { resumeData } from '@/data/resume';
 
 export default function Projects() {
-    return (
-        <section id="projects" className="w-full min-h-screen py-20 bg-secondary relative overflow-hidden flex items-center">
-            {/* Grid Background Pattern */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none"
-                style={{
-                    backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)',
-                    backgroundSize: '40px 40px'
-                }}>
-            </div>
+    const featured = resumeData.projects.find((p) => p.featured);
+    const rest = resumeData.projects.filter((p) => !p.featured);
+    const revealDelays = ['d1', 'd2', 'd3'];
 
-            <div className="container mx-auto px-4 relative z-10">
-                <div className="flex justify-center mb-16">
-                    <h2 className="text-4xl md:text-8xl font-display font-black uppercase text-white text-stroke-black drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] md:drop-shadow-[6px_6px_0px_rgba(0,0,0,1)]">
-                        Projects
-                    </h2>
+    return (
+        <section className="block" id="work">
+            <div className="wrap">
+                <div className="block-head">
+                    <span className="seclabel reveal"><span className="num">01</span> Selected work <span className="bar"></span></span>
+                    <h2 className="h2 reveal">Things I&apos;ve shipped.</h2>
+                    <p className="lead-2 reveal d1">Agent platforms, indexers, a native game, and a few on-chain apps — most built end to end, from data pipeline to UI.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {resumeData.projects.map((project, index) => (
-                        <div key={index} className="group relative bg-white border-[3px] border-black h-full flex flex-col shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-300">
-                            <div className="bg-black h-56 border-b-[3px] border-black flex items-center justify-center overflow-hidden group-hover:bg-secondary transition-colors duration-300 relative">
-                                {project.image ? (
-                                    <img
-                                        src={project.image}
-                                        alt={project.name}
-                                        className="w-full h-full object-cover grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
-                                    />
-                                ) : (
-                                    <span className="font-display font-black text-4xl text-white/20 group-hover:text-white/40 transition-colors">
-                                        PROJECT {index + 1}
-                                    </span>
-                                )}
+
+                {featured && (
+                    <article className="featured reveal d1">
+                        <div className="shot">
+                            <span className="tag-feat">Featured</span>
+                            <img src={featured.image} alt={featured.name} />
+                        </div>
+                        <div className="body">
+                            <span className="role">{featured.role}</span>
+                            <h3>{featured.name}</h3>
+                            <p>{featured.description}</p>
+                            <div className="chips">
+                                {featured.chips?.map((chip) => (
+                                    <span className="chip" key={chip}>{chip}</span>
+                                ))}
                             </div>
-                            <div className="p-8 flex-1 flex flex-col">
-                                <h3 className="text-3xl font-display font-bold mb-3">{project.name}</h3>
-                                <p className="font-mono text-sm font-bold mb-6 bg-primary inline-block px-3 py-1 border-2 border-black w-fit">
-                                    {project.role}
-                                </p>
-                                <p className="font-mono mb-8 flex-1 text-lg leading-relaxed">
-                                    {project.description}
-                                </p>
-                                <div className="flex gap-4 mt-auto">
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 text-center bg-black text-white font-bold font-mono py-3 border-2 border-black hover:bg-white hover:text-black transition-colors shadow-[4px_4px_0px_0px_rgba(123,97,255,1)] hover:shadow-none"
-                                    >
-                                        VIEW PROJECT
-                                    </a>
-                                </div>
+                            <div className="links">
+                                <a href={featured.link} target="_blank" rel="noopener" className="btn primary">
+                                    View project <span className="arr">↗</span>
+                                </a>
                             </div>
                         </div>
+                    </article>
+                )}
+
+                <div className="proj-grid">
+                    {rest.map((project, index) => (
+                        <article className={`pcard reveal ${revealDelays[index % revealDelays.length]}`} key={project.name}>
+                            <div className="shot"><img src={project.image} alt={project.name} /></div>
+                            <div className="pbody">
+                                <span className="role">{project.role}</span>
+                                <h3>{project.name}</h3>
+                                <p>{project.description}</p>
+                                <div className="chips">
+                                    {project.chips?.map((chip) => (
+                                        <span className="chip" key={chip}>{chip}</span>
+                                    ))}
+                                </div>
+                                <a href={project.link} target="_blank" rel="noopener" className="open">
+                                    Visit <span className="arr">↗</span>
+                                </a>
+                            </div>
+                        </article>
                     ))}
                 </div>
             </div>
