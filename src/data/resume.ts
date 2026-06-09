@@ -11,30 +11,31 @@ export const resumeData = {
         x: "https://x.com/_gkoding",
         telegram: "https://t.me/gkoding",
         // Hero
-        headlineLead: "I build",
-        headlineHighlight: "AI agents",
-        headlineTrail: "— and the tools to run them.",
-        lead: "AI Engineer at Solidus AI Tech. I work on agent orchestration, high-throughput data pipelines, and the developer tools that sit on top — usually end to end, backend through UI.",
+        // Building AI agents, developer tools, and occasionally overengineered side projects.
+        headlineLead: "I make",
+        headlineHighlight: "AI useful",
+        headlineTrail: "with agents, tools and infrastructure.",
+        lead: "AI Engineer at AI Tech Cloud Network. I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
         sub: "// automation · blockchain · developer tools",
         // About
-        aboutBig: "Most of what I do is making AI agents actually useful — connecting them to real APIs and MCP servers, and keeping huge responses from blowing past the model's context window.",
-        aboutSmall: "At Solidus AI Tech I built a Python agent orchestrator, shipped 25+ specialized agents, and built Agent Forge — a visual workflow platform with a meta-agent that turns plain language into working workflows. Before that, two years at Deloitte on Salesforce → NetSuite integrations and automation.",
+        aboutBig: "I like building the less glamorous parts of AI: the orchestration layers, tool connections, data pipelines, and interfaces that turn impressive demos into products people can actually use.",
+        aboutSmall: "Before AI, I spent two years solving integration and automation problems at Deloitte. That experience shaped how I approach engineering today: start with the workflow, build reliable systems underneath, and make the complexity disappear for the user.",
         focus: [
-            "AI agents & orchestration",
-            "High-throughput data pipelines",
-            "Developer tools & APIs",
+          "AI agents & orchestration",
+          "Data systems & infrastructure",
+          "Developer tools & APIs",
         ],
         focusNote: "// off the clock: gaming, marathons, and a lot of reading",
     },
     experience: [
         {
-            company: "Solidus AI Tech",
+            company: "AI Tech Cloud Network",
             role: "AI Engineer / Full-Stack Developer",
             period: "Feb 2025 — Present",
             location: "Remote",
             description: [
-                "Architected a Python AI agent orchestrator that taps into an array of API tools and MCP servers, simplifying automation.",
-                "Developed 25+ specialized AI agents for diverse use cases.",
+                "Architected a Python AI agent orchestrator that taps into an array of API tools and MCP servers, enabling agents to interact with APIs, databases, and external tools through a unified orchestration layer.",
+                "Built and deployed 25+ production AI agents across automation, research, and developer tooling workflows.",
                 "Used DuckDB as an intermediate SQL layer for massive API responses, letting agents query targeted data instead of hitting context limits.",
                 "Built Agent Forge, a visual workflow platform — architecting the backend and a meta-agent for natural-language workflow generation.",
                 "Managed full-stack deployment pipelines across Docker, Railway, Supabase, and Vercel.",
@@ -61,7 +62,7 @@ export const resumeData = {
             link: "https://forge.aitech.io/",
             image: "/agentforge.png",
             description:
-                "A visual editor for building AI workflows by dragging blocks onto a canvas — no code. Connect any model (OpenAI, Anthropic, Google, Groq, or local through Ollama), wire in 60+ tools like Gmail, Notion and Supabase, and ship the result as an API, webhook or scheduled job. I architected the backend and built the meta-agent that turns a plain-language prompt into a working workflow.",
+                "A visual workflow builder for AI automation. Drag blocks onto a canvas, connect models and tools, and deploy the result as an API, webhook, or scheduled job. I architected the backend and built the meta-agent that converts plain-language instructions into fully functioning workflows.",
             chips: ["Meta-Agent", "Multi-Model", "60+ Tools", "Python", "Backend"],
         },
         {
@@ -70,7 +71,7 @@ export const resumeData = {
             link: "http://ohsnap.it",
             image: "/ohsnap.png",
             description:
-                "A high-throughput indexer wired to a self-hosted Farcaster hub through a sharded pipeline, pushing events to Kafka. I built the developer APIs and a Scanner dashboard that streams live network activity.",
+                "A high-throughput Farcaster indexer built on a sharded event pipeline and Kafka. I developed the developer APIs and a live Scanner dashboard that streams network activity in real time.",
             chips: ["Kafka", "Self-hosted Hub", "Developer APIs"],
         },
         {

@@ -18,14 +18,14 @@ export default function Hero() {
                     <p className="sub mono reveal d2">{personal.sub}</p>
                     <div className="hero-actions reveal d3">
                         <a href="#work" className="btn primary">See selected work <span className="arr">→</span></a>
-                        <a href="/Resume.pdf" target="_blank" rel="noopener" className="btn ghost">Résumé <ArrowUpRight /></a>
+                        <a href="/Resume.pdf" target="_blank" rel="noopener" className="btn">Résumé <ArrowUpRight /></a>
                     </div>
                 </div>
                 <div className="portrait-wrap reveal d2">
                     <div className="portrait-card">
                         <div className="portrait-img"><img src="/profile.png" alt={personal.name} /></div>
                         <div className="portrait-meta">
-                            <span className="co"><span className="pulse"></span><b>Solidus AI Tech</b></span>
+                            <span className="co"><span className="pulse"></span><b>AI Tech Cloud Network</b></span>
                             <span className="now">Open to work</span>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ export default function Projects() {
                 <div className="block-head">
                     <span className="seclabel reveal"><span className="num">01</span> Selected work <span className="bar"></span></span>
                     <h2 className="h2 reveal">Things I&apos;ve shipped.</h2>
-                    <p className="lead-2 reveal d1">Agent platforms, indexers, a native game, and a few on-chain apps — most built end to end, from data pipeline to UI.</p>
+                    <p className="lead-2 reveal d1">Agent platforms, indexers, an ios game, and a few overengineered side projects, most built end to end, from data pipeline to UI.</p>
                 </div>
 
                 {featured && (
