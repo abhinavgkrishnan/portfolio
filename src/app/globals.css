@@ -239,3 +239,28 @@ footer.foot { border-top: var(--bd); background: var(--ink); color: var(--paper)
 .reveal-ready .reveal.d1 { transition-delay: .06s; }
 .reveal-ready .reveal.d2 { transition-delay: .12s; }
 .reveal-ready .reveal.d3 { transition-delay: .18s; }
+
+/* inline arrow icon (replaces emoji glyphs) */
+.btn .arr, .open .arr, .nav-cta .arr { flex: none; }
+
+/* ---------- mobile tuning ---------- */
+@media (max-width: 760px) {
+  body { font-size: 17px; }
+  .wrap { padding: 0 20px; }
+  .nav-inner { padding: 0 20px; }
+  .hero { padding: 36px 0 52px; }
+  section.block { padding: 60px 0; }
+  #work .block-head { margin-bottom: 34px; }
+  .featured .body { padding: 28px 24px; }
+  .featured .body h3 { font-size: 32px; }
+  .email-link {
+    display: block;
+    font-size: clamp(13px, 3.7vw, 22px);
+    padding: 16px 14px;
+    margin: 28px 0 36px;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+    word-break: normal;
+  }
+  .soc { width: 48px; height: 48px; }
+}

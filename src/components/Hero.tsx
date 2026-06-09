@@ -1,4 +1,5 @@
 import { resumeData } from '@/data/resume';
+import ArrowUpRight from '@/components/ArrowUpRight';
 
 export default function Hero() {
     const { personal } = resumeData;
@@ -17,7 +18,7 @@ export default function Hero() {
                     <p className="sub mono reveal d2">{personal.sub}</p>
                     <div className="hero-actions reveal d3">
                         <a href="#work" className="btn primary">See selected work <span className="arr">→</span></a>
-                        <a href="/Resume.pdf" target="_blank" rel="noopener" className="btn ghost">Résumé ↗</a>
+                        <a href="/Resume.pdf" target="_blank" rel="noopener" className="btn ghost">Résumé <ArrowUpRight /></a>
                     </div>
                 </div>
                 <div className="portrait-wrap reveal d2">

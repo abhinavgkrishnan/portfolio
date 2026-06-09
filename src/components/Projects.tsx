@@ -1,4 +1,5 @@
 import { resumeData } from '@/data/resume';
+import ArrowUpRight from '@/components/ArrowUpRight';
 
 export default function Projects() {
     const featured = resumeData.projects.find((p) => p.featured);
@@ -31,7 +32,7 @@ export default function Projects() {
                             </div>
                             <div className="links">
                                 <a href={featured.link} target="_blank" rel="noopener" className="btn primary">
-                                    View project <span className="arr">↗</span>
+                                    Visit <ArrowUpRight />
                                 </a>
                             </div>
                         </div>
@@ -52,7 +53,7 @@ export default function Projects() {
                                     ))}
                                 </div>
                                 <a href={project.link} target="_blank" rel="noopener" className="open">
-                                    Visit <span className="arr">↗</span>
+                                    Visit <ArrowUpRight />
                                 </a>
                             </div>
                         </article>

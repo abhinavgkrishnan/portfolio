@@ -1,3 +1,5 @@
+import ArrowUpRight from "@/components/ArrowUpRight";
+
 export default function Header() {
     return (
         <header className="nav" id="topnav">
@@ -9,7 +11,7 @@ export default function Header() {
                     <a href="#experience">Experience</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <a href="/Resume.pdf" target="_blank" rel="noopener" className="nav-cta">Résumé ↗</a>
+                <a href="/Resume.pdf" target="_blank" rel="noopener" className="nav-cta">Résumé <ArrowUpRight /></a>
             </div>
         </header>
     );
