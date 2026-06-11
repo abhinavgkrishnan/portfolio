@@ -12,7 +12,7 @@ export const resumeData = {
         telegram: "https://t.me/gkoding",
         // Hero
         // Building AI agents, developer tools, and occasionally overengineered side projects.
-        headlineLead: "I make",
+        headlineLead: "Making",
         headlineHighlight: "AI useful",
         headlineTrail: "with agents, tools and infrastructure.",
         lead: "AI Engineer at AI Tech Cloud Network. I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",

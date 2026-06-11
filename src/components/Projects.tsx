@@ -11,8 +11,8 @@ export default function Projects() {
             <div className="wrap">
                 <div className="block-head">
                     <span className="seclabel reveal"><span className="num">01</span> Selected work <span className="bar"></span></span>
-                    <h2 className="h2 reveal">Things I&apos;ve shipped.</h2>
-                    <p className="lead-2 reveal d1">Agent platforms, indexers, an ios game, and a few overengineered side projects, most built end to end, from data pipeline to UI.</p>
+                    <h2 className="h2 reveal">Projects I&apos;ve shipped.</h2>
+                    <p className="lead-2 reveal d1">From AI workflow platforms to Farcaster indexers and mobile games, most of my projects are built end to end — from infrastructure and data pipelines to the UI.</p>
                 </div>
 
                 {featured && (

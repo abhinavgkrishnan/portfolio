@@ -24,7 +24,17 @@ export default function ScrollEffects() {
                 },
                 { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
             );
-            document.querySelectorAll('.reveal').forEach((el) => revealObs?.observe(el));
+            document.querySelectorAll('.reveal').forEach((el) => {
+                // hero content animates in on load (it can sit below the fold, so the
+                // observer would otherwise never fire until the user scrolls)
+                if (el.closest('#hero')) return;
+                revealObs?.observe(el);
+            });
+            requestAnimationFrame(() =>
+                requestAnimationFrame(() => {
+                    document.querySelectorAll('#hero .reveal').forEach((el) => el.classList.add('in'));
+                })
+            );
         }
 
         const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('.nav-links a'));
