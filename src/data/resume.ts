@@ -62,7 +62,7 @@ export const resumeData = {
             link: "https://forge.aitech.io/",
             image: "/agentforge.png",
             description:
-                "A visual workflow builder for AI automation. Drag blocks onto a canvas, connect models and tools, and deploy the result as an API, webhook, or scheduled job. I architected the backend and built the meta-agent that converts plain-language instructions into fully functioning workflows.",
+                "A visual workflow builder for AI automation. Drag blocks onto a canvas, connect models, tools and Human-in-the-loop Blocks and deploy the result as an API, webhook, or scheduled job. I architected the backend and built the meta-agent that converts plain-language instructions into fully functioning workflows.",
             chips: ["Meta-Agent", "Multi-Model", "60+ Tools", "Python", "Backend"],
         },
         {
