@@ -34,11 +34,10 @@ export const resumeData = {
             period: "Feb 2025 — Present",
             location: "Remote",
             description: [
-                "Architected a Python AI agent orchestrator that taps into an array of API tools and MCP servers, enabling agents to interact with APIs, databases, and external tools through a unified orchestration layer.",
-                "Built and deployed 25+ production AI agents across automation, research, and developer tooling workflows.",
-                "Used DuckDB as an intermediate SQL layer for massive API responses, letting agents query targeted data instead of hitting context limits.",
-                "Built Agent Forge, a visual workflow platform — architecting the backend and a meta-agent for natural-language workflow generation.",
-                "Managed full-stack deployment pipelines across Docker, Railway, Supabase, and Vercel.",
+                "Architected the backend of Forge, a visual AI workflow platform — a composable engine of 18+ block types (agents, tools, conditionals, loops, human-in-the-loop) spanning 90+ tool integrations, MCP servers, and 6+ model providers, deployable as chat, REST API, webhook, or scheduled job.",
+                "Built a meta-agent within Forge that compiles plain-language instructions into deployable multi-step workflows.",
+                "Eliminated context-overflow failures and cut token cost by routing large tool outputs through a DuckDB SQL layer, so agents fetch only the rows they need instead of stuffing full API responses into the prompt.",
+                "Owned end-to-end delivery of backend architecture through deployment, with production monitoring/logging and real-time multi-user collaboration.",
             ],
         },
         {
@@ -47,10 +46,10 @@ export const resumeData = {
             period: "Jan 2023 — Feb 2025",
             location: "Bangalore",
             description: [
-                "Delivered end-to-end Salesforce → NetSuite integrations using Boomi.",
-                "Collaborated with 5+ cross-functional teams to ensure accurate data transfer.",
-                "Developed and optimized 20+ SuiteScripts to automate processes.",
-                "Authored 100+ user stories and 30+ test scripts in Jira; built a custom SuiteBilling solution for a critical business need.",
+                "Delivered end-to-end Salesforce → NetSuite integrations using Boomi, collaborating with 5+ cross-functional teams to ensure accurate data transfer and system compatibility.",
+                "Developed and optimized 20+ SuiteScripts (JavaScript) to automate processes.",
+                "Built a custom SuiteBilling solution to address a critical business need not available natively in NetSuite.",
+                "Collaborated in the initiation of NetSuite AI automation efforts.",
             ],
         },
     ],
@@ -63,7 +62,7 @@ export const resumeData = {
             image: "/agentforge.png",
             description:
                 "A visual workflow builder for AI automation. Drag blocks onto a canvas, connect models, tools and Human-in-the-loop Blocks and deploy the result as an API, webhook, or scheduled job. I architected the backend and built the meta-agent that converts plain-language instructions into fully functioning workflows.",
-            chips: ["Meta-Agent", "Multi-Model", "60+ Tools", "Python", "Backend"],
+            chips: ["Meta-Agent", "Multi-Model", "90+ Tools", "Python", "Backend"],
         },
         {
             name: "OhSnap!",
