@@ -122,9 +122,11 @@ export const resumeData = {
       "Critical Thinking",
     ],
     technical: [
+      "RAG",
+      "Vector Search",
+      "Python",
       "Next.js",
       "React",
-      "Python",
       "Node.js",
       "Kafka",
       "DuckDB",
