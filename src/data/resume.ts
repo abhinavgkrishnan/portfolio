@@ -67,6 +67,15 @@ export const resumeData = {
       chips: ["Meta-Agent", "Multi-Model", "90+ Tools", "Python", "Backend"],
     },
     {
+      name: "CompanionCube",
+      role: "Spoiler-Aware Game Guide · RAG",
+      link: "https://cube.ohsnap.it",
+      image: "/companioncube.png",
+      description:
+        "A guide for Hollow Knight and Silksong that knows where you are in the game and refuses to spoil what's ahead. Mark your progress and ask anything — spoiler control is enforced as vector-store payload filters, not prompts, over 5,000+ wiki chunks with hybrid retrieval (dense + BM25, RRF-fused) and cross-encoder reranking. Evaluated at 100% recall@6 and 0% spoiler-leak, with an in-character guide, two guidance modes, and bring-your-own-key model support.",
+      chips: ["RAG", "Hybrid Retrieval", "Qdrant", "FastAPI", "Gemini"],
+    },
+    {
       name: "OhSnap!",
       role: "Farcaster Indexer",
       link: "http://ohsnap.it",
