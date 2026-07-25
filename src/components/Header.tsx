@@ -11,7 +11,7 @@ export default function Header() {
                     <a href="#experience">Experience</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <a href="/Resume.pdf" target="_blank" rel="noopener" className="nav-cta">Résumé <ArrowUpRight /></a>
+                <a href="/resume.pdf" target="_blank" rel="noopener" className="nav-cta">Résumé <ArrowUpRight /></a>
             </div>
         </header>
     );

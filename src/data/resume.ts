@@ -1,7 +1,7 @@
 export const resumeData = {
   personal: {
     name: "Abhinav G Krishnan",
-    role: "AI Engineer / Full Stack Developer",
+    role: "AI Engineer",
     location: "Bangalore, India",
     email: "abhinavgkrishnan@gmail.com",
     phone: "+91 9447715481",
@@ -15,7 +15,7 @@ export const resumeData = {
     headlineLead: "Making",
     headlineHighlight: "AI useful",
     headlineTrail: "with agents, tools and infrastructure.",
-    lead: "AI Engineer at AI Tech Cloud Network. I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
+    lead: "AI Engineer at AI Tech Cloud Network (formerly Solidus AI Tech). I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
     sub: "// automation · blockchain · developer tools",
     // About
     aboutBig:
@@ -32,14 +32,15 @@ export const resumeData = {
   experience: [
     {
       company: "AI Tech Cloud Network",
-      role: "AI Engineer / Full-Stack Developer",
+      role: "AI Engineer",
       period: "Feb 2025 — Present",
       location: "Remote",
       description: [
         "Architected the backend of Forge, a visual AI workflow platform — a composable engine of 18+ block types (agents, tools, conditionals, loops, human-in-the-loop) spanning 90+ tool integrations, MCP servers, and 6+ model providers, deployable as chat, REST API, webhook, or scheduled job.",
-        "Built a RAG based meta-agent within Forge that compiles plain-language instructions into deployable multi-step workflows.",
-        "Eliminated context-overflow failures and cut token cost by routing large tool outputs through a DuckDB SQL layer, so agents fetch only the rows they need instead of stuffing full API responses into the prompt.",
+        "Built a RAG based meta-agent within Forge that compiles plain-language instructions into deployable multi-step workflows — using live block metadata and a schema-validation retry loop so the generated workflows are runnable, not just plausible.",
+        "Cut token cost and eliminated context-overflow failures by routing large tool outputs through a DuckDB SQL layer, so agents fetch only the rows they need instead of stuffing full API responses into the prompt.",
         "Owned end-to-end delivery of backend architecture through deployment, with production monitoring/logging and real-time multi-user collaboration.",
+        "Integrated Web3 wallet-connect authentication, extending Forge to wallet-gated workflows.",
       ],
     },
     {
@@ -48,16 +49,15 @@ export const resumeData = {
       period: "Jan 2023 — Feb 2025",
       location: "Bangalore",
       description: [
-        "Delivered end-to-end Salesforce → NetSuite integrations using Boomi, collaborating with 5+ cross-functional teams to ensure accurate data transfer and system compatibility.",
-        "Developed and optimized 20+ SuiteScripts (JavaScript) to automate processes.",
+        "Validated data integrity across a Salesforce–Boomi–NetSuite integration — reconciled field mappings, proration, and numeric accuracy between systems, and diagnosed whether fixes belonged in the Salesforce, Boomi, or NetSuite layer.",
+        "Developed and optimized 20+ SuiteScripts (JavaScript) to automate processes and handle integration edge cases.",
         "Built a custom SuiteBilling solution to address a critical business need not available natively in NetSuite.",
-        "Collaborated in the initiation of NetSuite AI automation efforts.",
       ],
     },
   ],
   projects: [
     {
-      name: "Agent Forge",
+      name: "Forge",
       role: "Visual AI Workflow Editor",
       featured: true,
       link: "https://forge.aitech.io/",
@@ -113,24 +113,24 @@ export const resumeData = {
     },
   ],
   skills: {
-    soft: [
-      "Communication",
-      "Problem-Solving",
-      "Attention to Detail",
-      "Adaptability",
-      "Collaboration",
-      "Critical Thinking",
-    ],
     technical: [
       "RAG",
       "Vector Search",
+      "Agent Orchestration",
+      "Tool Calling / MCP",
+      "Prompt Engineering",
+      "LLM Integration",
+      "Evals",
       "Python",
-      "Next.js",
-      "React",
-      "Node.js",
+      "TypeScript",
+      "FastAPI",
       "Kafka",
       "DuckDB",
+      "Qdrant",
       "SQL",
+      "Next.js",
+      "React",
+      "Docker",
     ],
   },
   education: [
@@ -138,11 +138,6 @@ export const resumeData = {
       institution: "Model Engineering College, Kochi",
       degree: "B.Tech in Electronics and Communication Engineering",
       period: "June 2018 - May 2022",
-    },
-    {
-      institution: "Silver Hills HSS, Kozhikode",
-      degree: "High School",
-      period: "May 2018",
     },
   ],
 };
