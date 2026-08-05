@@ -38,7 +38,7 @@ export const resumeData = {
       description: [
         "Architected the backend of Forge, a visual AI workflow platform — a composable engine of 18+ block types (agents, tools, conditionals, loops, human-in-the-loop) spanning 90+ tool integrations, MCP servers, and 6+ model providers, deployable as chat, REST API, webhook, or scheduled job.",
         "Built a RAG based meta-agent within Forge that compiles plain-language instructions into deployable multi-step workflows — using live block metadata and a schema-validation retry loop so the generated workflows are runnable, not just plausible.",
-        "Cut token cost and eliminated context-overflow failures by routing large tool outputs through a DuckDB SQL layer, so agents fetch only the rows they need instead of stuffing full API responses into the prompt.",
+        "Built a sports-betting agent that answers natural-language odds questions — cut token cost and eliminated context-overflow by loading oversized API responses into a DuckDB SQL layer and querying only the rows needed, instead of stuffing full responses into the prompt.",
         "Owned end-to-end delivery of backend architecture through deployment, with production monitoring/logging and real-time multi-user collaboration.",
         "Integrated Web3 wallet-connect authentication, extending Forge to wallet-gated workflows.",
       ],
