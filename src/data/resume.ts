@@ -1,7 +1,7 @@
 export const resumeData = {
   personal: {
     name: "Abhinav G Krishnan",
-    role: "AI Engineer",
+    role: "AI & Fullstack Engineer",
     location: "Bangalore, India",
     email: "abhinavgkrishnan@gmail.com",
     phone: "+91 9447715481",
@@ -15,7 +15,7 @@ export const resumeData = {
     headlineLead: "Making",
     headlineHighlight: "AI useful",
     headlineTrail: "with agents, tools and infrastructure.",
-    lead: "AI Engineer at AI Tech Cloud Network (formerly Solidus AI Tech). I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
+    lead: "AI & Fullstack Engineer at AI Tech Cloud Network (formerly Solidus AI Tech). I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
     sub: "// automation · blockchain · developer tools",
     // About
     aboutBig:
@@ -32,7 +32,7 @@ export const resumeData = {
   experience: [
     {
       company: "AI Tech Cloud Network",
-      role: "AI Engineer",
+      role: "AI & Fullstack Engineer",
       period: "Feb 2025 — Present",
       location: "Remote",
       description: [
