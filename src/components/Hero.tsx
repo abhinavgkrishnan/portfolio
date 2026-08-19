@@ -25,8 +25,8 @@ export default function Hero() {
                     <div className="portrait-card">
                         <div className="portrait-img"><img src="/profile.png" alt={personal.name} /></div>
                         <div className="portrait-meta">
-                            <span className="co"><span className="pulse"></span><b>AI Tech Cloud Network</b></span>
-                            <span className="now">Open to work</span>
+                            <span className="co"><span className="pulse"></span><b>Open to work</b></span>
+                            <span className="now">Previously · AI Tech Cloud Network</span>
                         </div>
                     </div>
                 </div>

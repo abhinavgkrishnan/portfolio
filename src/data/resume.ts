@@ -15,7 +15,7 @@ export const resumeData = {
     headlineLead: "Making",
     headlineHighlight: "AI useful",
     headlineTrail: "with agents, tools and infrastructure.",
-    lead: "AI & Fullstack Engineer at AI Tech Cloud Network (formerly Solidus AI Tech). I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
+    lead: "AI & Fullstack Engineer, most recently at AI Tech Cloud Network (formerly Solidus AI Tech). I work across agent orchestration, developer tools, and data infrastructure, usually end to end, from backend services and APIs to the interfaces people actually use.",
     sub: "// automation · blockchain · developer tools",
     // About
     aboutBig:
@@ -33,7 +33,7 @@ export const resumeData = {
     {
       company: "AI Tech Cloud Network",
       role: "AI & Fullstack Engineer",
-      period: "Feb 2025 — Present",
+      period: "Feb 2025 — July 2026",
       location: "Remote",
       description: [
         "Architected the backend of Forge, a visual AI workflow platform — a composable engine of 18+ block types (agents, tools, conditionals, loops, human-in-the-loop) spanning 90+ tool integrations, MCP servers, and 6+ model providers, deployable as chat, REST API, webhook, or scheduled job.",
