@@ -68,12 +68,12 @@ export const resumeData = {
     },
     {
       name: "CompanionCube",
-      role: "Spoiler-Aware Game Guide · RAG",
+      role: "Spoiler-Aware Game Guide · Hybrid RAG + Graph",
       link: "https://cube.ohsnap.it",
       image: "/companioncube.png",
       description:
-        "A guide for Hollow Knight and Silksong that knows where you are in the game and refuses to spoil what's ahead. Mark your progress and ask anything — spoiler control is enforced as vector-store payload filters, not prompts, over 5,000+ wiki chunks with hybrid retrieval (dense + BM25, RRF-fused) and cross-encoder reranking. Evaluated at 100% recall@6 and 0% spoiler-leak, with an in-character guide, two guidance modes, and bring-your-own-key model support.",
-      chips: ["RAG", "Hybrid Retrieval", "Qdrant", "FastAPI", "Gemini"],
+        "A guide for Hollow Knight and Silksong that knows where you are in the game and refuses to spoil what's ahead. Mark your progress and ask anything — spoiler control is enforced as vector-store payload filters, not prompts, over 5,000+ wiki chunks with hybrid retrieval (dense + BM25, RRF-fused) and cross-encoder reranking, evaluated at 100% recall@6 and 0% spoiler-leak. I then added a lore knowledge graph — 2,000+ LLM-extracted relationships with entity resolution and the same spoiler gate carried into graph traversal — and evaluated the hybrid honestly with an LLM judge. The finding: on a densely cross-linked wiki the graph ties vector on connection questions (related entities are already co-documented), but wins clearly on enumeration, returning complete gated sets where vector covers only ~69%. A concrete read on where graph retrieval actually pays off — sparse, siloed data — rather than a blanket claim. In-character guide, two guidance modes, bring-your-own-key models, containerized on GCP Cloud Run.",
+      chips: ["RAG", "GraphRAG", "Hybrid Retrieval", "Qdrant", "Evals"],
     },
     {
       name: "OhSnap!",
