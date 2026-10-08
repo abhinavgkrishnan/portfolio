@@ -49,8 +49,7 @@ export const resumeData = {
       period: "Jan 2023 — Feb 2025",
       location: "Bangalore",
       description: [
-        "Validated data integrity across a Salesforce–Boomi–NetSuite integration — reconciled field mappings, proration, and numeric accuracy between systems, and diagnosed whether fixes belonged in the Salesforce, Boomi, or NetSuite layer.",
-        "Developed and optimized 20+ SuiteScripts (JavaScript) to automate processes and handle integration edge cases.",
+        "Owned the NetSuite side of a Salesforce-Boomi-NetSuite migration: reconciled field mappings, proration, and numeric accuracy across all three layers while onboarding client stakeholders and triaging their change requests.",
         "Built a custom SuiteBilling solution to address a critical business need not available natively in NetSuite.",
       ],
     },
