@@ -31,6 +31,16 @@ export const resumeData = {
   },
   experience: [
     {
+      company: "WiseQ",
+      role: "Founding Engineer",
+      period: "Sep 2026 — Present",
+      location: "Remote",
+      description: [
+        "Building the entire WiseQ platform from scratch as the sole engineer, across frontend, backend, and the agent layer: an agentic analytics product that lets non-technical SME teams ask business questions in plain language and get the analysis a data team would produce.",
+        "Designed the agentic orchestration system that runs the full data-science lifecycle (data discovery, prep, feature engineering, model building and validation, interpretation) over connectors to a company's existing systems (ERPs, CRMs, HRMS), surfaced through a conversational command center.",
+      ],
+    },
+    {
       company: "AI Tech Cloud Network",
       role: "AI & Fullstack Engineer",
       period: "Feb 2025 — July 2026",
