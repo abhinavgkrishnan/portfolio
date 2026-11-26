@@ -32,7 +32,7 @@ export const resumeData = {
   experience: [
     {
       company: "WiseQ",
-      role: "Founding Engineer",
+      role: "Freelance Engineer",
       period: "Sep 2026 — Present",
       location: "Remote",
       description: [
